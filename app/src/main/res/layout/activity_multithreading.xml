@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="by.samples.multithrading.MultithreadingActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:text="Threads using"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Freeze indicator"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/start_in_ui_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 3 sec process in UI"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/start_in_background_method_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 3 sec process in Background (runOnUIThread)"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/start_in_background_handler_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start 3 sec process in Background (Handler)"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="by.samples.broadcasting.TimeTickBroadcastActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:text="Kotlin coroutines"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register time tick"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/unregister_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unregister time tick"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/register_button"
+        />
+
+</LinearLayout>

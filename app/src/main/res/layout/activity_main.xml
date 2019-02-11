@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="by.samples.MainActivity"
+    android:weightSum="100"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samples"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_weight="10"
+        />
+
+    <Button
+        android:id="@+id/start_time_tick_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Tick Broadcast"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/start_broadcast_name_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broadcast Message"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/start_multithreading_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multithreading"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/start_async_task_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Async task"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/start_rx_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rx"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/start_coroutines_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin coroutines"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
